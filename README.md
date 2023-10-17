@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
-- [Live Site URL](https://your-live-site-url.com)
+- [Solution URL](https://github.com/soundsmetallic/huddle_landing_page)
+- [Live Site URL](https://soundsmetallic.github.io/huddle_landing_page/)
 
 ## My process
 
