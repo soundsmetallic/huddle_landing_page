@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+/* General styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+/* Main page styling */
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: center/cover no-repeat url("../images/bg-desktop.svg"), hsl(257, 40%, 49%);
+  display: flex;
+  position: relative;
+  padding: 80px;
+}
+
+.image-section {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.logo {
+  position: absolute;
+}
+
+.mockup {
+  width: 100%;
+  top: 7%;
+  min-width: 500px;
+  position: relative;
+}
+
+.copy {
+  width: 45%;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  margin-top: -3rem;
+  font-size: 2.5rem;
+  width: 500px;
+  font-family: "Poppins", sans-serif;
+}
+
+.copy p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  width: 550px;
+  line-height: 1.6rem;
+  margin-top: 1rem;
+}
+
+button {
+  font-size: 1.1rem;
+  font-family: "Open Sans", sans-serif;
+  width: 200px;
+  height: 55px;
+  flex-shrink: 0;
+  border-radius: 28px;
+  border: none;
+  color: hsl(257, 40%, 49%);
+  background: white;
+  margin-top: 1.5rem;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: hsl(300, 69%, 71%);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  position: absolute;
+  bottom: 5%;
+  right: 7.5%;
+}
+
+.social-icons > * {
+  width: 42px;
+  height: 42px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.social-icons > *:hover {
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+footer p {
+  color: white;
+}
+footer a, footer a:link, footer a:visited {
+  color: hsl(300, 69%, 71%);
+}
+
+/* Media queries */
+@media screen and (max-width: 1340px) {
+  .copy p {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 1230px) {
+  .copy p {
+    width: 300px;
+  }
+  h1 {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .wrapper {
+    min-width: 375px;
+    padding: 10%;
+    flex-direction: column;
+    background: top/100% no-repeat url("../images/bg-mobile.svg"), hsl(257, 40%, 49%);
+  }
+  .logo {
+    width: 35%;
+    max-width: 264px;
+  }
+  .image-section {
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+  }
+  .copy {
+    height: 60%;
+    width: 100%;
+    padding: 0;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  h1 {
+    width: 400px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .copy p {
+    width: 80%;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .mockup {
+    min-width: initial;
+    width: 100%;
+    max-width: 500px;
+    top: 100px;
+  }
+  footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 620px) {
+  .wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .image-section {
+    align-items: flex-start;
+    height: 35%;
+  }
+  .copy {
+    height: 60%;
+    justify-content: center;
+  }
+  h1 {
+    margin-top: 15%;
+    font-size: 1.25rem;
+    width: 260px;
+  }
+  .copy p {
+    font-size: 1rem;
+    width: 300px;
+  }
+  button {
+    margin-top: 1.5rem;
+    height: 2.75rem;
+    font-size: 0.9rem;
+  }
+  .social-icons {
+    right: initial;
+  }
+}
